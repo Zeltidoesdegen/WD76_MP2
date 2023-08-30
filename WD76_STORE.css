@@ -695,11 +695,131 @@ object-position: 100% center;
 }
 
 
+/* Category Bar */
 
+.category-container {
+    width: 100%;
+    background: #f6f1e6;
+    justify-content: center;
+    color: #543f29;
+    padding: 2em;
+    border-radius: 20px;
+    font-size: 2.5rem;
+    display: flex;
+  /*   gap: 0.2em; */
+  }
+  
+  .item {
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.8s ease-in-out;
+    width: 10%;
+    padding: 0.5em 0.7em;
+    cursor: pointer;
+    font-weight: 800;
+    background-blend-mode: color;
+    
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-transform: uppercase;
+    line-height:1em;
+    letter-spacing: -10px;
+    border-radius: 20px;
+    gap: 0.5em;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  
+  
+  .fashion {
+    background: no-repeat
+        url(https://static01.nyt.com/images/2017/01/18/t-magazine/fashion/18tmag-mixedshows/18tmag-mixedshows-superJumbo.jpg),
+      rgba(0, 0, 0, 0.15);
+    background-size: cover;
+    
+    
+  }
 
-
-
-
+  .accessory {
+    background: no-repeat
+        url(https://img.freepik.com/premium-photo/clothing-accessories-men-women-ready-new-normal-travel-life-style_11304-2299.jpg),
+      rgba(0, 0, 0, 0.15);
+    background-size: cover;
+    
+    
+  }
+  
+  .game {
+    background: no-repeat
+        url(https://images.unsplash.com/photo-1592840496694-26d035b52b48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=525&q=80),
+      rgba(0, 0, 0, 0.15);
+    background-size: cover;
+    
+  }
+  
+  .shoes {
+    background: no-repeat
+        url(https://img.livestrong.com/640/cme-data/getty%2Fd64b2a1246c54ab8ab329246e283d8d9.jpg),
+      rgba(0, 0, 0, 0.15);
+    background-size: cover;
+    
+  }
+  
+  .appliance {
+    background: no-repeat
+        url(https://cdnassets.hw.net/96/ea/752ed3764ee5812fe7ac07c8ef97/architect.jpeg),
+      rgba(0, 0, 0, 0.15);
+    background-size: cover;
+    
+  }
+  
+  .mobile {
+    background: no-repeat
+        url(https://images.samsung.com/is/image/samsung/assets/uk/mobile-phone-buying-guide/best-phone-display/What_phone_has_the_best_display_TopKV_720x768_mobile.png?$720_N_PNG$),
+      rgba(0, 0, 0, 0.15);
+    background-size: cover;
+    
+  }
+  
+  .item:hover {
+    width: 100%;
+    background-position:center;
+  }
+  
+  /* 
+  Choose :
+  1) gap
+  2) start from width 10% or 20%;
+  */
+  
+  @media (max-width: 1200px) {
+    .category-container {
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+      font-size: 1.8rem;
+    }
+  
+    .item {
+      min-width: 45%;
+      height: 8vh; 
+      writing-mode: horizontal-tb;
+      letter-spacing: initial;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .item:hover {
+      height: 20vh;
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    
+   .item {
+      min-width: 100%; 
+  }
+  }
 
 
 

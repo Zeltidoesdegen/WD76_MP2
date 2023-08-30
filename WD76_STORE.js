@@ -39,8 +39,6 @@ const handleOnMove = e => {
   }
 }
 
-/* -- Had to add extra lines for touch events -- */
-
 window.onmousedown = e => handleOnDown(e);
 
 window.ontouchstart = e => handleOnDown(e.touches[0]);
@@ -52,3 +50,17 @@ window.ontouchend = e => handleOnUp(e.touches[0]);
 window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
+
+const imageContainers = document.querySelectorAll(".image-container");
+
+imageContainers.forEach(container => {
+  container.addEventListener("mouseenter", () => {
+    const hoverText = container.querySelector(".hover-text");
+    hoverText.style.transform = `translate(-50%, calc(-100% - 10px))`; // Adjust the positioning as needed
+  });
+
+  container.addEventListener("mouseleave", () => {
+    const hoverText = container.querySelector(".hover-text");
+    hoverText.style.transform = `translate(-50%, -50%)`;
+  });
+});
