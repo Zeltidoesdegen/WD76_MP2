@@ -1182,3 +1182,49 @@ object-position: 100% center;
         z-index: 0;
     }
 }
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    font-family: "Nunito Sans",sans-serif;
+    background-image: url(images/3928401.jpg);
+    height: 100vh;
+}
+.greeting h1{
+    padding: 50px;
+    font-size: 5rem;
+    color: #fff;
+}
+.greeting p {
+    padding-top: 15px;
+    padding-bottom: 40px;
+    font-size: 1.2rem;
+}
+.greeting button {
+    transition: 0.2s ease-in-out;
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    letter-spacing: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+    background: #673cd8;
+    max-width: 400px;
+    padding: 13px 0px;
+}
+.greeting a {
+    color: white;
+    text-decoration: none;
+}
+.greeting button:hover {
+    background-color: rgb(220, 203, 166);
+}
+.greeting a:hover {
+    color: white;
+}
