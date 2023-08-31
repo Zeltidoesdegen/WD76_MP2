@@ -205,3 +205,4 @@ document.addEventListener("DOMContentLoaded", function () {
   inputRight.addEventListener("mouseup", function () {
     thumbRight.classList.remove("active");
   });
+
