@@ -185,6 +185,7 @@ var nextButton = document.getElementById("btn_next");
 prevButton.addEventListener("click", prevPage);
 nextButton.addEventListener("click", nextPage);
 
+//// Add to cart
 let cart = [];
 
 if (localStorage.getItem("myCart")){
@@ -196,5 +197,6 @@ function addCart(name, price, img) {
     cart.push({pName: name, pPrice: price, pImg: img});
 
     localStorage.setItem("myCart", JSON.stringify(cart));
-
+    console.log(cart);
 }
+
